@@ -47,3 +47,4 @@ const bashPull = function(arrays, values, iteratee, comparator) {
 }
 
 console.log(bashPull([1, 3], [1], undefined, function(a, b) { return a===b}))
+export default bashPull;

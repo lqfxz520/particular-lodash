@@ -1,3 +1,5 @@
+import strictIndexOf from "./strictIndexOf.js";
+
 /**
  * 实现一个可以从指定的位置查找元素
  *
