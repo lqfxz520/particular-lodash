@@ -1,9 +1,9 @@
 /**
  * 循环数组返回每一个处理过后的元素
  *
- * @parma {Array} array 检查的元素
- * @parma {Function} iteratee 每一个元素调用该函数
- * @returns 返回处理过后的数组
+ * @param {Array} array 检查的元素
+ * @param {Function} iteratee 每一个元素调用该函数
+ * @returns {Array} 返回处理过后的数组
  */
 const map = function (array, iteratee) {
   const length = array != null ? array.length : 0;

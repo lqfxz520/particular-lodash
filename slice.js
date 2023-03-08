@@ -13,9 +13,11 @@ const slice = function (array, start, end) {
   if (length === 0) {
     return [];
   }
+  // 先判断有没传参
   start = start == null ? 0 : start;
   end = end === undefined ? length : end;
 
+  // 负值处理
   if (start < 0) {
     start = -start < length ? 0 : start + length;
   }
@@ -26,6 +28,7 @@ const slice = function (array, start, end) {
     end += length;
   }
 
+  // 处理最终有效值
   length = start > end ? 0 : ((end - start) >>> 0);
   start >>>= 0;
 

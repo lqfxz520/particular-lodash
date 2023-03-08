@@ -1,4 +1,4 @@
-import map from "./map.js";
+import map from "../map.js";
 
 const indexOf = function (arrays, computed, index, comparator) {
   const length = arrays.length;
