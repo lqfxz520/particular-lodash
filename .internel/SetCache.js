@@ -5,11 +5,24 @@ class SetCache {
    * @constructor
    * @param {Array} [values] 需要储存的数组
    */
-  constructor(values) {}
+  constructor(values) {
+    const length = values == null ? 0 : values.length;
+    let index = -1;
 
-  add(value) {}
+    this.__data__ = new MapCache();
+    while (++index < length) {
+      this.add(values[index]);
+    }
+  }
 
-  has(value) {}
+  add(value) {
+    this.__data__.set(value, '__lodash_has_undefined__');
+    return this;
+  }
+
+  has(value) {
+    return this.__data__.has(value);
+  }
 }
-
+SetCache.prototype.push = SetCache.prototype.add;
 export default SetCache;
