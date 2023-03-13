@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import isArrayLike from "../isArrayLike";
 
-describe("check isArrayLike", () => {
+describe("check isArrayLikeObject", () => {
   it("valid string is true", () => {
     const bool = isArrayLike("aaa");
 
